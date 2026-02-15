@@ -1,0 +1,88 @@
+:root {
+  --bg: #0e1a24;
+  --panel: #142535;
+  --panel-2: #1d3348;
+  --text: #f2f7fb;
+  --accent: #ffd44f;
+  --danger: #ff6262;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top, #1b3044 0%, var(--bg) 60%);
+  color: var(--text);
+}
+
+.app {
+  width: min(94vw, 760px);
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border: 1px solid #2a4660;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.3);
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hud h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.hud-stats {
+  display: flex;
+  gap: 14px;
+  font-size: 0.95rem;
+}
+
+#game-canvas {
+  width: 100%;
+  height: auto;
+  margin-top: 14px;
+  border: 1px solid #355472;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #102030, #0b1620);
+}
+
+.controls {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.controls p {
+  margin: 0;
+  color: #c1d3e3;
+  font-size: 0.9rem;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #15232f;
+  font-weight: 700;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.95);
+}

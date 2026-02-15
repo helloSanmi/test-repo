@@ -1,0 +1,18 @@
+export const GAME_CONFIG = {
+  width: 720,
+  height: 420,
+  totalTimeSeconds: 45,
+  playerSpeed: 380,
+  playerWidth: 64,
+  playerHeight: 18,
+  starRadius: 9,
+  bombRadius: 11,
+  powerUpRadius: 10,
+  starSpawnInterval: 550,
+  bombSpawnInterval: 1200,
+  powerUpSpawnInterval: 8000,
+  fallSpeedMin: 120,
+  fallSpeedMax: 260,
+  maxLives: 3,
+  shieldDurationSeconds: 6,
+};
